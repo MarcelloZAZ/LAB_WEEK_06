@@ -38,27 +38,16 @@ class MainActivity : AppCompatActivity() {
 
         catAdapter.setData(
             listOf(
-                CatModel(
-                    Gender.Male,
-                    CatBreed.BalineseJavanese,
-                    "Fred",
-                    "Silent and deadly",
-                    "https://cdn2.thecatapi.com/images/7dj.jpg"
-                ),
-                CatModel(
-                    Gender.Female,
-                    CatBreed.ExoticShorthair,
-                    "Wilma",
-                    "Cuddly assassin",
-                    "https://cdn2.thecatapi.com/images/egv.jpg"
-                ),
-                CatModel(
-                    Gender.Unknown,
-                    CatBreed.AmericanCurl,
-                    "Curious George",
-                    "Award winning investigator",
-                    "https://cdn2.thecatapi.com/images/bar.jpg"
-                )
+                CatModel(Gender.Male, CatBreed.BalineseJavanese, "Fred", "Silent and deadly", "https://cdn2.thecatapi.com/images/7dj.jpg"),
+                CatModel(Gender.Female, CatBreed.ExoticShorthair, "Wilma", "Cuddly assassin", "https://cdn2.thecatapi.com/images/egv.jpg"),
+                CatModel(Gender.Unknown, CatBreed.AmericanCurl, "Curious George", "Award winning investigator", "https://cdn2.thecatapi.com/images/bar.jpg"),
+                CatModel(Gender.Male, CatBreed.ExoticShorthair, "Tommy", "Playful jumper", "https://cdn2.thecatapi.com/images/bpc.jpg"),
+                CatModel(Gender.Female, CatBreed.BalineseJavanese, "Luna", "Loves to sleep all day", "https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg"),
+                CatModel(Gender.Unknown, CatBreed.AmericanCurl, "Milo", "Adventurer cat", "https://cdn2.thecatapi.com/images/8q2.jpg"),
+                CatModel(Gender.Female, CatBreed.ExoticShorthair, "Cleo", "Queen of the house", "https://cdn2.thecatapi.com/images/ahh.jpg"),
+                CatModel(Gender.Male, CatBreed.BalineseJavanese, "Leo", "Fast runner", "https://cdn2.thecatapi.com/images/2oo.jpg"),
+                CatModel(Gender.Unknown, CatBreed.AmericanCurl, "Shadow", "Always hiding", "https://cdn2.thecatapi.com/images/cdu.jpg"),
+                CatModel(Gender.Male, CatBreed.ExoticShorthair, "Simba", "Brave little lion", "https://cdn2.thecatapi.com/images/2j6.jpg")
             )
         )
     }
