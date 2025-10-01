@@ -3,6 +3,7 @@ package com.example.lab_week_06
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lab_week_06.model.CatBreed
@@ -31,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
+        // 🔹 Attach swipe-to-delete ke RecyclerView
+        val itemTouchHelper = ItemTouchHelper(catAdapter.swipeToDeleteCallback)
+        itemTouchHelper.attachToRecyclerView(recyclerView)
+
         catAdapter.setData(
             listOf(
                 CatModel(
@@ -57,6 +62,7 @@ class MainActivity : AppCompatActivity() {
             )
         )
     }
+
     private fun showSelectionDialog(cat: CatModel) {
         AlertDialog.Builder(this)
             .setTitle("Cat Selected")
